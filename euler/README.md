@@ -46,6 +46,28 @@ p: i. 2mill = list of the first 2 mil primes -> a
 
 2mil&> a = 1's wherever 2 mil is greater than the prime, 0's otherwise. Now use this list to index a.
 
+16.ijs
+------
+
+x: 2 ^ 1000 is 2 raised to 1000 with infinite precision. 
+
+Then I do 10&#.^:_1 to get its digits
+
+Then I sum them up with +/
+
+29.ijs
+------
+
+2 + i. 99 is 2 to 100
+
+a ^/ a is an 'exponentiation table', just like a 'multiplication table'
+
+,/ unravels the above 2D array into a 1D array
+
+~. is 'nub'. When given a 1D array it returns a 1D array of all the unique elements in the array
+
+# counts the return value of the nub
+
 53.ijs
 ------
 
