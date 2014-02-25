@@ -45,3 +45,17 @@ Let p(n) be the function that returns the nth prime. p(n) obviously grows faster
 p: i. 2mill = list of the first 2 mil primes -> a
 
 2mil&> a = 1's wherever 2 mil is greater than the prime, 0's otherwise. Now use this list to index a.
+
+53.ijs
+------
+
+a =. 1 + i.100
+x ! y is y choose x
+a !/ a makes a 'choose table' analogous to */
+,/ unravels it into a 1D array
+1e6&< returns an array of 0s (less) and 1s (more)
++/ sums up the array, in effect counting the number of 1s, which is what we want
+
+56.ijs
+------
+
