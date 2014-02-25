@@ -66,7 +66,7 @@ a ^/ a is an 'exponentiation table', just like a 'multiplication table'
 
 ~. is 'nub'. When given a 1D array it returns a 1D array of all the unique elements in the array
 
-# counts the return value of the nub
+\# counts the return value of the nub
 
 53.ijs
 ------
