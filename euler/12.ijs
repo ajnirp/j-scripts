@@ -1,0 +1,1 @@
+num_divisors =. 3 : '# (i. y) #~ 0 = (i. y) | y
