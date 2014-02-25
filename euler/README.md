@@ -26,3 +26,22 @@ Basically, a tells us the indices where we have a number that is either divisibl
 q: returns an array of the prime divisors of the number in ascending order
 
 {: returns the last element of an array
+
+5.ijs
+-----
+
+Dyadic *. returns the LCM of x and y, and 1 + i.20 is 1 2 3 ... 19 20. Just put *. between the elements of the list.
+
+7.ijs
+-----
+
+One thing to note is that p: 0 returns the first prime number. Not p: 1
+
+10.ijs
+------
+
+Let p(n) be the function that returns the nth prime. p(n) obviously grows faster than n, so the 2 millionth prime is surely greater than 2 million.
+
+p: i. 2mill = list of the first 2 mil primes -> a
+
+2mil&> a = 1's wherever 2 mil is greater than the prime, 0's otherwise. Now use this list to index a.
