@@ -59,3 +59,26 @@ a !/ a makes a 'choose table' analogous to */
 56.ijs
 ------
 
+i. 100 produces 0 to 99
+
+x: makes them infinite precision
+
+from now on, no loss of precision!
+
+a ^/ a is an 'exponentiation table'
+
+,/ unravels the table into a 1D array
+
+(10&#.^:_1) literally reverses the base operation. It takes a number in base 10 and converts it into an array of digits in base 10. So 1234 becomes 1 2 3 4
+
+at this point, we have a 2D array. Let's step back and examine its shape:
+
+   $ (10&#.^:_1) ,/ a ^/ a=.i.100
+10000 198
+
+So the longest power has 198 digits, so J padded everything with zeroes until each power is 198 digits. Cool. The 2D array itself is basically an array of 10000 entries, each entry is a 198-long array
+
+So we add up each 198-long entry via +/"1. The "1 makes sure that the rank of each operand of +/ is 1. Normally, +/ would sum up (first entry's i-th + second entry's i-yj + ...) for i going from 0 to 198. The +/"1 takes care of that problem.
+
+Finally, >./ finds the max of the array.
+
