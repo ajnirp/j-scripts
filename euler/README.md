@@ -119,3 +119,12 @@ So we add up each 198-long entry via +/"1. The "1 makes sure that the rank of ea
 
 Finally, >./ finds the max of the array.
 
+57.ijs
+------
+
+Step takes y and returns 1 / 1 + y
+
+Iter y is step step ... step (y times) 1
+
+split_terms takes the numerator and denominator for each term in iter >: i. 1000 and splits them apart. The result is a 2D array of shape 1000 2
+
