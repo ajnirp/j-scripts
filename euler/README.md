@@ -60,6 +60,11 @@ Then I do 10&#.^:_1 to get its digits
 
 Then I sum them up with +/
 
+20.ijs
+------
+
+Oddly enough, x: */ >: i. 100 gives an imprecise value for 100 factorial. So does x: ! 100. But */ x: >: i. 100 does give a precise value. So the trick is to enforce precision as early as possible.
+
 29.ijs
 ------
 
@@ -72,6 +77,11 @@ a ^/ a is an 'exponentiation table', just like a 'multiplication table'
 ~. is 'nub'. When given a 1D array it returns a 1D array of all the unique elements in the array
 
 \# counts the return value of the nub
+
+48.ijs
+------
+
+a is the array 1 to 1000. Raise a to a, sum them up, turn the sum into an array of digits, then use _10 {. to grab the last 10 digits.
 
 53.ijs
 ------
