@@ -46,6 +46,11 @@ p: i. 2mill = list of the first 2 mil primes -> a
 
 2mil&> a = 1's wherever 2 mil is greater than the prime, 0's otherwise. Now use this list to index a.
 
+13.ijs
+------
+
+Copy into a file, use find-and-replace to replace all newlines with a space, add a x: +/ before everything to sum up with extended precision
+
 16.ijs
 ------
 
