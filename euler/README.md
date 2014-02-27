@@ -65,6 +65,11 @@ Then I sum them up with +/
 
 Oddly enough, x: */ >: i. 100 gives an imprecise value for 100 factorial. So does x: ! 100. But */ x: >: i. 100 does give a precise value. So the trick is to enforce precision as early as possible.
 
+24.ijs
+------
+
+x A. y returns the x+1 th permutation of the number array y.
+
 29.ijs
 ------
 
