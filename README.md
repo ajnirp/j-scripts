@@ -20,4 +20,4 @@ id1: To get an identity matrix of order 4, just take 1 followed by four zeroes a
 
 id2: i. 4 is 0 1 2 3. Do an =/ on itself. Actually, any list will do, not just i. 4
 
-id3: The key observation here is that i. 16 when reshaped to a 4 by 4 matrix has diagonal elements which are all multiples of 4+1.
+id3: The key observation here is that i. 4 4 has diagonal elements which are all multiples of 4+1.
