@@ -21,3 +21,25 @@ id1: To get an identity matrix of order 4, just take 1 followed by four zeroes a
 id2: i. 4 is 0 1 2 3. Do an =/ on itself. Actually, any list will do, not just i. 4
 
 id3: The key observation here is that i. 4 4 has diagonal elements which are all multiples of 4+1.
+
+gray.ijs
+--------
+
+Start with
+
+    0
+    1
+
+next takes such a pattern and produces the next level, which in the above case is
+
+   0 0
+   0 1
+   1 0
+   1 1
+
+Just append 0 to each cell, then reverse the pattern and append 1 to each cell. Then join to the two with `,`
+
+josephus.ijs
+------------
+
+I'm literally just simulating the problem. Kill the 2nd guy from the left, then rotate the list one to the left. Then repeat. Stop when the length of the list is 1.
