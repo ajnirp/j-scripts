@@ -1,4 +1,4 @@
-remdup =. 3 : 'y #~ -. }: padded = 1 |. padded =. y , a. {~ >: a. i. {: y'
+remdup =. 3 : 'y #~ }: padded ~: 1 |. padded =. y , a. {~ >: a. i. {: y'
 
 NB. pad y with an ascii character that is different from its last char
 NB. otherwise the algo fails e.g. if we had simply done y , '0'
