@@ -7,5 +7,5 @@ delta =. (curr , 0) {~ 2 | curr =. {: y
 (delta + {. y) , curr , curr + 1 { y
 )
 
-solve =. monad : 'a =. 0 1 2 while. y > {: a do. a =. step a end. {. a'
+solve =. {{ a =. 0 1 2 while. y > {: a do. a =. step a end. {. a }}
 solve 4000000
