@@ -8,3 +8,6 @@ testcases ← 'abc' 'abca' (1 2 3 1) (⍳ 4) (1 1 1 3 3 4 3 2 4 2)
 expected ← 0 1 1 0 1
 
 expected ≡ containsDuplicate¨ testcases
+
+⍝ Another way to do it: use the Keys function and ask if all elements occur once
+containsDuplicate ← ~⍤(∧⌿ {1=≢⍵}⌸)
