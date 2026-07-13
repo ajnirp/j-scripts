@@ -1,4 +1,2 @@
-sortNub =. /:~ @: ~.
-isValidAnagram =. sortNub@:[ -: sortNub@:]
-
-isValidAnagramTerse =. /:~@:~.@:[-:/:~@:~.@:]
+isValidAnagram =. /:~@:[ -: /:~@:]
+'ab' isValidAnagram 'aba'
