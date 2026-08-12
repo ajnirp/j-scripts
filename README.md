@@ -1,9 +1,9 @@
 About
 -----
 
-A collection of some of my J scripts.
+A collection of some of my J and APL scripts.
 
-To future me
+Installation
 ------------
 
 .deb files provided by J Software for versions 8 and above usually install the normal Unix way (so look for stuff in `/usr/share/j/8.01/...`). To run sentences like `install 'all'` you need to open j console as follows:
