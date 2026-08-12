@@ -1,0 +1,1 @@
+isValidPalindrome ← {(⌽≡⊢) ⎕A∩⍨1⎕C ⍵}
